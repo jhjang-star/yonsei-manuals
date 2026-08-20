@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연세대 한국어 배치고사 안내서</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#EAEEF5; --surface:#FFFFFF; --ink:#152039; --ink-soft:#4C5975; --ink-faint:#8592AC;
+    --line:#D9E0EC; --line-soft:#E7ECF4;
+    --blue:#2C68C2; --blue-bg:#E6EFFB; --violet:#5B50D6; --violet-bg:#ECEAFB; --olive:#6B8E23; --olive-bg:#EDF0DC;
+    --shadow:0 1px 2px rgba(18,58,110,.06),0 10px 30px rgba(18,58,110,.08);
+    --font-body:"Noto Sans KR",system-ui,sans-serif; --font-head:"Gothic A1","Noto Sans KR",system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0E1524;--surface:#161F33;--ink:#E9EFFA;--ink-soft:#AAB7D0;--ink-faint:#7787A4;--line:#2A3654;--line-soft:#232E48;
+    --blue:#7AA6E8;--blue-bg:#1B2B4B;--violet:#A79BF2;--violet-bg:#241F4D;--olive:#AEC46A;--olive-bg:#22270E;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 30px rgba(0,0,0,.4);}}
+  :root[data-theme="dark"]{
+    --bg:#0E1524;--surface:#161F33;--ink:#E9EFFA;--ink-soft:#AAB7D0;--ink-faint:#7787A4;--line:#2A3654;--line-soft:#232E48;
+    --blue:#7AA6E8;--blue-bg:#1B2B4B;--violet:#A79BF2;--violet-bg:#241F4D;--olive:#AEC46A;--olive-bg:#22270E;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 30px rgba(0,0,0,.4);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.6;-webkit-font-smoothing:antialiased;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;}
+  .wrap{max-width:920px;width:100%;}
+  header{text-align:center;margin-bottom:40px;}
+  .brand{display:inline-flex;align-items:center;gap:11px;margin-bottom:18px;}
+  .brand .dot{width:34px;height:34px;border-radius:9px;background:#123A6E;color:#fff;display:grid;place-items:center;
+    font-family:var(--font-head);font-weight:800;font-size:17px;}
+  .brand span{font-family:var(--font-head);font-weight:700;font-size:15px;color:var(--ink-soft);}
+  h1{font-family:var(--font-head);font-weight:800;font-size:clamp(26px,5vw,40px);margin:0 0 10px;letter-spacing:-.01em;text-wrap:balance;}
+  .lead{color:var(--ink-soft);font-size:clamp(15px,2.4vw,18px);margin:0;}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media (max-width:720px){.cards{grid-template-columns:1fr;}}
+  a.card{display:flex;flex-direction:column;gap:12px;text-decoration:none;background:var(--surface);border:1px solid var(--line);
+    border-radius:18px;padding:24px 22px;box-shadow:var(--shadow);transition:transform .12s ease, box-shadow .12s ease;}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(18,58,110,.14);}
+  a.card:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+  .ic{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;}
+  .ic svg{width:26px;height:26px;}
+  .card.s .ic{background:var(--blue-bg);color:var(--blue);}
+  .card.a .ic{background:var(--violet-bg);color:var(--violet);}
+  .card.t .ic{background:var(--olive-bg);color:var(--olive);}
+  .role{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;}
+  .card.s .role{color:var(--blue);} .card.a .role{color:var(--violet);} .card.t .role{color:var(--olive);}
+  h2{font-family:var(--font-head);font-weight:800;font-size:20px;margin:0;color:var(--ink);}
+  .desc{color:var(--ink-soft);font-size:13.5px;margin:0;flex:1;}
+  .go{font-size:13.5px;font-weight:700;display:inline-flex;align-items:center;gap:5px;}
+  .card.s .go{color:var(--blue);} .card.a .go{color:var(--violet);} .card.t .go{color:var(--olive);}
+  footer{margin-top:36px;text-align:center;color:var(--ink-faint);font-size:12.5px;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><span class="dot">연</span><span>연세대학교 한국어학당</span></div>
+      <h1>한국어 배치고사 안내서</h1>
+      <p class="lead">역할에 맞는 안내서를 선택하세요.</p>
+    </header>
+    <div class="cards">
+      <a class="card s" href="student-manual.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 10v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="role">학생용</div>
+        <h2>응시 안내</h2>
+        <p class="desc">로그인부터 결과 확인까지, 시험 보는 방법. 한국어·English·中文·日本語.</p>
+        <span class="go">열기 →</span>
+      </a>
+      <a class="card a" href="admin-manual.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 4v5" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <div class="role">관리자용</div>
+        <h2>운영 안내</h2>
+        <p class="desc">평가 개설·채점 비교·점수 수정·급수 확정·반 편성까지.</p>
+        <span class="go">열기 →</span>
+      </a>
+      <a class="card t" href="teacher-manual.html">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <div class="role">강사용</div>
+        <h2>채점 안내</h2>
+        <p class="desc">쓰기·말하기 루브릭 채점과 급 배정 참조 활용.</p>
+        <span class="go">열기 →</span>
+      </a>
+    </div>
+    <footer>연세대학교 한국어학당 · 한국어 배치고사 안내서</footer>
+  </div>
+</body>
+</html>
