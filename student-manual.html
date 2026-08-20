@@ -72,6 +72,14 @@
     padding:5px 12px;border-radius:999px;}
   .hero h1{font-size:clamp(28px,5.5vw,44px);font-weight:800;margin:16px 0 12px;letter-spacing:-.01em;}
   .hero .lead{font-size:clamp(16px,2.5vw,19px);color:var(--ink-soft);max-width:38ch;}
+  .access{display:inline-flex;align-items:center;gap:14px;margin-top:22px;text-decoration:none;
+    background:var(--brand-weak);border:1px solid var(--brand);border-radius:14px;padding:12px 18px;}
+  .access .k{display:flex;flex-direction:column;line-height:1.25;}
+  .access .k b{font-family:var(--font-head);font-size:15px;color:var(--brand);}
+  .access .k .u{font-size:12.5px;color:var(--ink-soft);}
+  .access .arw{font-size:18px;font-weight:800;color:var(--brand);}
+  .access:hover{filter:brightness(1.04);}
+  .access:focus-visible{outline:2px solid var(--brand);outline-offset:3px;}
 
   /* ── flow diagram ── */
   .flow{margin:30px 0 8px;background:var(--surface);border:1px solid var(--line);
@@ -184,6 +192,10 @@
     <span class="eyebrow" data-i18n="hero.eyebrow">학생용 · 배치고사</span>
     <h1 data-i18n="hero.title">한국어 배치고사, 이렇게 봐요</h1>
     <p class="lead" data-i18n="hero.lead">처음부터 끝까지 순서대로 따라 하면 돼요. 어렵지 않아요!</p>
+    <a class="access" href="https://korean-yonsei-web.vercel.app" target="_blank" rel="noopener">
+      <span class="k"><b data-i18n="access.go">시험 접속하기</b><span class="u">korean-yonsei-web.vercel.app</span></span>
+      <span class="arw" aria-hidden="true">→</span>
+    </a>
   </section>
 
   <!-- FLOW -->
@@ -315,6 +327,7 @@
     "hero.eyebrow":{ko:"학생용 · 배치고사",en:"For students · Placement test",zh:"学生用 · 分班考试",ja:"学生用 · プレースメントテスト"},
     "hero.title":{ko:"한국어 배치고사, 이렇게 봐요",en:"How to take the Korean placement test",zh:"韩国语分班考试这样进行",ja:"韓国語プレースメントテストの受け方"},
     "hero.lead":{ko:"처음부터 끝까지 순서대로 따라 하면 돼요. 어렵지 않아요!",en:"Just follow the steps in order, start to finish. It's easy!",zh:"从头到尾按顺序操作即可，很简单！",ja:"最初から最後まで順番どおりに進めるだけ。かんたんです！"},
+    "access.go":{ko:"시험 접속하기",en:"Go to the test",zh:"进入考试",ja:"テストへアクセス"},
     "flow.title":{ko:"전체 흐름",en:"The whole flow",zh:"整体流程",ja:"全体の流れ"},
     "flow.1":{ko:"로그인",en:"Log in",zh:"登录",ja:"ログイン"},
     "flow.2":{ko:"소리·마이크 확인",en:"Check sound & mic",zh:"检查声音·麦克风",ja:"音声・マイク確認"},
